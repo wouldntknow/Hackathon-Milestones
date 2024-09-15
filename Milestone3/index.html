@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Interactive Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dynamic Resume Builder</h1>
+    <form id="resume-form">
+
+  <fieldset>
+<legend>Personal Information</legend>
+<label for="name">Name:</label>
+<input type="text" id="name" placeholder="Enter your name" required>
+
+<label for="email">Email:</label>
+<input type="email" id="email" placeholder="Enter your email" required>
+
+<label for="number">Contact Number:</label>
+<input type="tel" id="number" placeholder="Enter your phone number" required>
+  </fieldset>
+
+<fieldset> 
+    <legend>Educational Background</legend>
+    <label for="Education">Education:</label>
+    <textarea id="Education" placeholder="Enter your Education" rows="6" required></textarea>
+</fieldset>
+
+<fieldset> 
+    <legend>Work Experience</legend>
+    <label for="experience">Experience:</label>
+    <textarea id="experience" placeholder="Enter your work experience" rows="9" required></textarea>
+</fieldset>
+
+<fieldset>
+    <legend>Skills</legend>
+    <label for="skills">Skills:</label>
+    <textarea id="skills" placeholder="Enter your work skills" rows="4" required></textarea>
+</fieldset>
+
+<button type="submit"><b>Generate your resume</b></button>
+    </form>
+<br>
+<!-- making resume dynamic -->
+<div id="resume-display"> 
+    <!-- resume will be generarted below -->
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
